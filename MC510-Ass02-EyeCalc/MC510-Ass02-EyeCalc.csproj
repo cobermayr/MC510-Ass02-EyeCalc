@@ -49,6 +49,8 @@
     <Compile Include="CalcControl.Designer.cs">
       <DependentUpon>CalcControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalcCore.cs" />
+    <Compile Include="CalcCoreNew.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

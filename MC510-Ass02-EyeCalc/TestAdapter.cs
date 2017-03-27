@@ -24,7 +24,7 @@ namespace MC510_Ass02_EyeCalc
                         int x = (Cursor.Position.X - calcControl.Parent.Left) - 8;
                         int y = (Cursor.Position.Y - calcControl.Parent.Top) - 30;
                         calcControl.updateGaze(((float)x / ((float)calcControl.Width)), ((float)y) / ((float)calcControl.Height));
-                        Thread.Sleep(250);
+                        Thread.Sleep(50);
                     }
                 }
             });

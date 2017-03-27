@@ -36,14 +36,14 @@
             this.calcControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calcControl.Location = new System.Drawing.Point(0, 0);
             this.calcControl.Name = "calcControl";
-            this.calcControl.Size = new System.Drawing.Size(784, 762);
+            this.calcControl.Size = new System.Drawing.Size(584, 712);
             this.calcControl.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 762);
+            this.ClientSize = new System.Drawing.Size(584, 712);
             this.Controls.Add(this.calcControl);
             this.Name = "MainForm";
             this.Text = "MC510-Ass02-EyeCalc";
