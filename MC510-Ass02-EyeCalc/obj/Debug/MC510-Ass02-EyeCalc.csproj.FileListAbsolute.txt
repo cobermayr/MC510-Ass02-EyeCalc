@@ -1,0 +1,9 @@
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\Debug\MC510-Ass02-EyeCalc.exe
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\Debug\MC510-Ass02-EyeCalc.pdb
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510-Ass02-EyeCalc.csprojResolveAssemblyReference.cache
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510_Ass02_EyeCalc.CalcControl.resources
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510_Ass02_EyeCalc.Properties.Resources.resources
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510-Ass02-EyeCalc.csproj.GenerateResource.Cache
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510-Ass02-EyeCalc.exe
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510-Ass02-EyeCalc.pdb
+d:\users\christian und jenni\documents\visual studio 2013\Projects\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\Debug\MC510_Ass02_EyeCalc.MainForm.resources
