@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 
 namespace MC510_Ass02_EyeCalc
 {
@@ -102,8 +99,7 @@ namespace MC510_Ass02_EyeCalc
 
         private void handleNumber(String s, String currentText)
         {
-            if ((currentText == "+") || (currentText == "-") || (currentText == "*") || (currentText == "/"))
-            {
+            if ((currentText == "+") || (currentText == "-") || (currentText == "*") || (currentText == "/")){
                 updateText(s);
             }
             else

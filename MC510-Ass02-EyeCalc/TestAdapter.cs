@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using EyeXFramework;
+using System;
 using System.Threading;
 using System.Windows.Forms;
+using Tobii.EyeX.Framework;
 
 namespace MC510_Ass02_EyeCalc
 {
@@ -19,17 +18,23 @@ namespace MC510_Ass02_EyeCalc
             // start thread
             Thread backgroundThread = new Thread(argument =>
             {
-                while(true) {
-                    if(1 == 1) {
-                        int x = (Cursor.Position.X - calcControl.Parent.Left) - 8;
-                        int y = (Cursor.Position.Y - calcControl.Parent.Top) - 30;
-                        calcControl.updateGaze(((float)x / ((float)calcControl.Width)), ((float)y) / ((float)calcControl.Height));
-                        Thread.Sleep(50);
+                using (var eyeXHost = new EyeXHost())
+                {
+                    // create a data stream: lightly filtered gaze point data
+                    using (var lightlyFilteredGazeDataStream = eyeXHost.CreateGazePointDataStream(GazePointDataMode.LightlyFiltered))
+                    {
+                        eyeXHost.Start();
+
+                        while (true)
+                        {
+                            lightlyFilteredGazeDataStream.Next += (s, e) => calcControl.updateGaze(((float)(e.X - calcControl.Parent.Left - 8) / calcControl.Width), ((float)(e.Y - calcControl.Parent.Top - 30)) / calcControl.Height);
+                            System.Threading.Thread.Sleep(10);
+                        }
                     }
                 }
             });
 
-            backgroundThread.IsBackground = true; // <- Important! You don't want this thread to keep the application open.
+            backgroundThread.IsBackground = true;
             backgroundThread.Start();
         }
     }

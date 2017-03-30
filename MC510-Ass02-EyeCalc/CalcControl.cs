@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 
@@ -162,7 +157,7 @@ namespace MC510_Ass02_EyeCalc
             for (int col = 1; col < cols; col++)
             {
                 float x = ((float)Width) / cols * col;
-                g.DrawLine(Pens.Gray, new Point((int)x, (int)((float)Height) / rows), new Point((int)x, Height));
+                g.DrawLine(Pens.Gray, new Point((int)x, (int)Height / rows), new Point((int)x, Height));
             }
 
             // draw characters
@@ -178,7 +173,7 @@ namespace MC510_Ass02_EyeCalc
                     float textHeight = g.MeasureString(text, font).Height;
 
                     float xOffset = Width - textWidth - 8;
-                    float yOffset = (0.5f + row) * ((float)Height) / rows - textHeight / 2;
+                    float yOffset = (0.5f + row) * Height / rows - textHeight / 2;
 
                     g.DrawString(text, font, brush, new Point((int)xOffset, (int)yOffset));
                 }
@@ -192,7 +187,7 @@ namespace MC510_Ass02_EyeCalc
 
                             String drawString = "";
                             String cell = currentKeyboard[row-1, col];
-                            String element = (String)cell;
+                            String element = cell;
                             drawString = element;
 
                             // set textSize based on holdProgress
@@ -210,8 +205,8 @@ namespace MC510_Ass02_EyeCalc
                             float textWidth = g.MeasureString(drawString, font).Width;
                             float textHeight = g.MeasureString(drawString, font).Height;
 
-                            float xOffset = (0.5f + col) * ((float)Width) / cols - textWidth / 2;
-                            float yOffset = (0.5f + row) * ((float)Height) / rows - textHeight / 2;
+                            float xOffset = (0.5f + col) * Width / cols - textWidth / 2;
+                            float yOffset = (0.5f + row) * Height / rows - textHeight / 2;
 
                             g.DrawString(drawString, font, brush, new Point((int)xOffset, (int)yOffset));
                         }
@@ -222,7 +217,7 @@ namespace MC510_Ass02_EyeCalc
             // draw gaze-dot
             if (xFactor.HasValue && yFactor.HasValue)
             {
-                g.FillEllipse(Brushes.Blue, ((float)Width) * xFactor.Value - 15, ((float)Height) * yFactor.Value - 15, 30, 30);
+                g.FillEllipse(Brushes.Blue, Width * xFactor.Value - 15, Height * yFactor.Value - 15, 30, 30);
             }
         }
 
@@ -232,14 +227,14 @@ namespace MC510_Ass02_EyeCalc
 
             if(xFactor >= (0f - KEYBOARD_X_FACTOR_TOLERANCE) && xFactor <= (1f + KEYBOARD_X_FACTOR_TOLERANCE)) {
                 this.xFactor = Math.Max(0.0f, Math.Min(1.0f, xFactor));
-                col = (int)(((float)Width) * this.xFactor / (((float)Width) / cols));
+                col = (int)(Width * this.xFactor / (((float)Width) / cols));
                 col = Math.Min(col, BASE_KEYBOARD.GetLength(1)-1);
             } else {
                 this.xFactor = xFactor;
             }
             if(yFactor >= (0f - KEYBOARD_Y_FACTOR_TOLERANCE) && yFactor <= (1f + KEYBOARD_Y_FACTOR_TOLERANCE)) {
                 this.yFactor = Math.Max(0.0f, Math.Min(1.0f, yFactor));
-                row = (int)(((float)Height) * this.yFactor / (((float)Height) / rows));
+                row = (int)(Height * this.yFactor / (((float)Height) / rows));
                 row = Math.Min(row, BASE_KEYBOARD.GetLength(0));
             } else {
                 this.yFactor = yFactor;

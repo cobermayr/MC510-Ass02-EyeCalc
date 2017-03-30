@@ -1,0 +1,14 @@
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\EyeXFramework.dll
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\Tobii.EyeX.Client.Net20.dll
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\Tobii.EyeX.Client.dll
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\MC510-Ass02-EyeCalc.exe.config
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\MC510-Ass02-EyeCalc.exe
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\MC510-Ass02-EyeCalc.pdb
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\bin\x86\Debug\EyeXFramework.pdb
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510-Ass02-EyeCalc.csprojResolveAssemblyReference.cache
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510_Ass02_EyeCalc.CalcControl.resources
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510_Ass02_EyeCalc.MainForm.resources
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510_Ass02_EyeCalc.Properties.Resources.resources
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510-Ass02-EyeCalc.csproj.GenerateResource.Cache
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510-Ass02-EyeCalc.exe
+D:\personal\git\MC510-Ass02-EyeCalc\MC510-Ass02-EyeCalc\obj\x86\Debug\MC510-Ass02-EyeCalc.pdb
